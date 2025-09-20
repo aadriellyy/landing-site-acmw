@@ -7,7 +7,7 @@ import Localizacao from './sections/Localizacao';
 import Eventos from './components/Eventos'
 import Footer from './components/Footer';
 import Members from './sections/Members';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
