@@ -7,7 +7,8 @@ import Localizacao from './sections/Localizacao';
 import Eventos from './components/Eventos'
 import Footer from './components/Footer';
 import Members from './sections/Members';
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           }
         />
         <Route
-          path="/Members"
+          path="/members"
           element={
             <>
               <Header />
