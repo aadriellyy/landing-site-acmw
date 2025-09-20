@@ -1,0 +1,137 @@
+.members {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #ffffff;
+}
+
+.members-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.members-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-weight: bold;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Reduzido para 2 colunas para acomodar o layout horizontal */
+  gap: 2rem;
+  justify-content: center; 
+  margin: 0 auto; 
+}
+
+.member-card {
+  background: linear-gradient(180deg, #94b9ff, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: row; /* Mudança principal: de column para row */
+  align-items: stretch; /* Para que ambos os lados tenham a mesma altura */
+  min-height: 250px; /* Altura mínima para consistência */
+}
+
+/* Container da imagem e botão */
+.member-image-section {
+  display: flex;
+  flex-direction: column;
+  width: 40%; /* 40% da largura para a seção da imagem */
+  position: relative;
+}
+
+.member-card img {
+  width: 100%;
+  flex: 1; /* A imagem ocupa o espaço disponível */
+  object-fit: cover;
+  object-position: center top; /* Ajusta o foco da imagem */
+}
+
+/* Botão posicionado sobre a imagem */
+.member-card-content .btn {
+  display: flex;
+  gap: 1.2rem;
+  background:  #F053B5;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  width: 150px;
+  height: 52px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.member-card-content .btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.member-card-content .btn:hover {
+  background: #6472a5;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+.member-card-content {
+  padding: 1.5rem;
+  flex: 1; /* O conteúdo de texto ocupa o espaço restante (60%) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.member-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.member-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .members-grid {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  }
+  
+  .member-card {
+    flex-direction: column; /* Volta para layout vertical em mobile */
+    min-height: auto;
+  }
+  
+  .member-image-section {
+    width: 100%;
+  }
+  
+  .member-card-content {
+    text-align: center; /* Centraliza o texto em mobile */
+  }
+  
+  .member-image-section .btn {
+    position: static; /* Remove o posicionamento absoluto em mobile */
+    transform: none;
+    margin-top: 1rem;
+  }
+}

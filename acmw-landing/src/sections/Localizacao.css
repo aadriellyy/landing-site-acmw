@@ -1,0 +1,144 @@
+.localizacao {
+    padding: 4rem 2rem;
+    background: #F4F4F4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.localizacao-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.localizacao-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.localizacao-text {
+    text-align: left;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.title {
+  text-align: left;
+  font-size: 2.5rem;
+  color: #151921;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.localizacao-text p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: #323232;
+    line-height: 1.6;
+}
+
+.localizacao-buttons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+.btn-location-primary {
+    background:  #F053B5;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    width: 241px;
+    height: 52px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn-location-primary:hover {
+    background: #6472a5;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+.localizacao-buttons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.localizacao-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.localizacao-image img {
+    width: 600px;
+    height: 600px;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.localizacao-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .localizacao-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+    
+    .localizacao-text {
+        text-align: center;
+    }
+    
+    .localizacao-image {
+        justify-content: center;
+    }
+    
+    .localizacao-image img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .localizacao {
+        padding: 1.5rem;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .localizacao-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .localizacao-text p {
+        font-size: 1.1rem;
+    }
+    
+    .localizacao-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .localizacao-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .localizacao-image img {
+        max-width: 300px;
+    }
+}
