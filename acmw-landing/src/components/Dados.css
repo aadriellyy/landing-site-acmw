@@ -35,3 +35,38 @@
 .card p {
   font-size: 1.5rem;
 }
+
+
+@media (max-width: 968px) {
+  .cards-section {
+    gap: 1.5rem;
+  }
+  .card {
+    width: 45%;   
+    height: auto;
+    padding: 1.5rem;
+  }
+  .card h2 {
+    font-size: 2.5rem;
+  }
+  .card p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;   
+    max-width: 350px;
+  }
+  .card h2 {
+    font-size: 2rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+}

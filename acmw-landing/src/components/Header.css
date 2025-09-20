@@ -36,21 +36,20 @@
     font-size: 1.4rem;
 }
 
-/* bolinha escondida */
+
 .nav-links ul li::after {
     content: "";
     position: absolute;
-    right: -15px; /* distância do texto */
+    right: -15px; 
     top: 50%;
-    transform: translateY(-50%) scale(0); /* começa invisível */
+    transform: translateY(-50%) scale(0); 
     width: 8px;
     height: 8px;
-    background: #F053B5; /* cor da bolinha */
+    background: #F053B5; 
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-/* bolinha aparece no hover */
 .nav-links ul li:hover::after {
     transform: translateY(-50%) scale(1);
 }
@@ -99,11 +98,13 @@
 @media (max-width: 768px) {
     .header {
         padding: 1rem;
+        align-items: center;
     }
     
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
     
     .header-logo {
@@ -115,7 +116,7 @@
 
 @media (max-width: 480px) {
     .header-right {
-        flex-direction: row; /* Mantém lado a lado mesmo em mobile */
+        flex-direction: row;
         gap: 0.8rem;
     }
     

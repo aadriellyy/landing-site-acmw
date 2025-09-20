@@ -107,12 +107,13 @@ html, body {
     transform: scale(1.03);
 }
 
-/* Responsividade */
+
 @media (max-width: 968px) {
     .hero-content {
         flex-direction: column;
         text-align: center;
         gap: 2.5rem;
+        align-items: center;
     }
     
     .hero-text {
@@ -128,7 +129,7 @@ html, body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .hero {
         padding: 1.5rem;
         height: auto;
@@ -152,14 +153,14 @@ html, body {
         width: 100%;
         max-width: 250px;
     }
+
+    .hero-image {
+        display: flex;
+    }
 }
 
 @media (max-width: 480px) {
     .hero-text h1 {
         font-size: 1.8rem;
-    }
-    
-    .hero-image img {
-        max-width: 300px;
     }
 }
