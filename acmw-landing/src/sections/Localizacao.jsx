@@ -1,6 +1,6 @@
 import React from "react";
 import "./Localizacao.css";
-import ImageCarousel from "../../components/ImageCarousel";
+import ImageCarousel from "../components/ImageCarousel";
 
 const Localizacao = () => {
     return (

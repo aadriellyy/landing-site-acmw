@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './components/Header'
-import Hero from './pages/sections/Hero'
+import Hero from './sections/Hero'
 import Dados from './components/Dados';
-import Mvv from './pages/sections/Mvv';
-import Localizacao from './pages/sections/Localizacao';
+import Mvv from './sections/Mvv';
+import Localizacao from './sections/Localizacao';
 import Eventos from './components/Eventos'
 import Footer from './components/Footer';
-import Members from './pages/sections/Members';
+import Members from './sections/Members';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
