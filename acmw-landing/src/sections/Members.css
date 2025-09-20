@@ -1,7 +1,7 @@
 .members {
   padding: 4rem 2rem;
   text-align: center;
-  background: #ffffff;
+  background: #F4F4F4;
 }
 
 .members-title {
@@ -12,7 +12,7 @@
 }
 
 .members-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: #666;
   max-width: 600px;
   margin: 0 auto 3rem;

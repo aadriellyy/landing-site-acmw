@@ -13,10 +13,10 @@ const Header = () => {
                     </div>
                 </div>
                 <ul className="nav-links">
-                    <li><a href="#sobre">Home</a></li>
-                    <li><a href="#schedule">Sobre</a></li>
-                    <li><a href="#members">Membros</a></li>
-                    <li><a href="#members">Eventos</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#mvv">Sobre</a></li>
+                    <li><a href="/membros">Membros</a></li>
+                    <li><a href="#events">Eventos</a></li>
                     <li><a href="mailto:maristela.holanda@gmail.com">Contato</a></li>
                 </ul>
             </nav>

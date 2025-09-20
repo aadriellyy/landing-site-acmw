@@ -5,7 +5,7 @@ import lorena from '../assets/lorena.png';
 
 const Eventos = () => {
   return (
-    <section className="eventos-section">
+    <section className="eventos-section" id="events">
       <div className="eventos-container">
         <h2 className="section-title">Próximos eventos</h2>
         
